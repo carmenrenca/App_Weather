@@ -1,0 +1,66 @@
+@media screen and (max-width: 1400px){
+    .weekTime{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    
+ 
+    .weather-box{
+        width: 96%;
+        height: 199px;
+    }
+
+    #contentInfo{
+        grid-template-rows: 372px auto;
+    }
+}
+@media screen and (max-width:1139px){
+    .weekTime {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #contentInfo {
+        grid-template-rows: 594px auto
+    }
+    #TodayHighlights {
+     
+        grid-template-columns: none;
+    }
+}
+
+@media screen and (max-width:998px){
+
+    #content{
+ 
+        grid-template-areas:  "lateral" "contentinfo"   !important;
+        grid-template-columns:1fr   !important;
+        grid-template-rows: 100vh auto;
+    }
+    #lateral{
+        width: 100%;
+        position: absolute;
+    }
+
+    .imgWheather {
+    
+        top: 0px;
+      
+    }
+    .backgroudCloud {
+        left: 155px;
+    }
+}
+
+@media screen and (max-width:648px){
+
+    .backgroudCloud {
+        left: 23px;
+    }
+
+    .weekTime {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #contentInfo {
+        grid-template-rows: 1040px auto;
+    }
+}
